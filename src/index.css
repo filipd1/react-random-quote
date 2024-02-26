@@ -1,13 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(56, 55, 55);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  /* display: grid;
+  justify-content: center;
+  align-items: center; */
+  padding: 1em;
+  margin-top: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container input[type="text"] {
+  margin: 0 1em 1.5em 1em;
+  background-color: rgb(153, 197, 233);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.2em;
+  font-size: 16px;
+  color: rgb(49, 49, 49);
+}
+
+.container label {
+  font-size: 17px;
+  color: #fff;
+}
+
+.no-cat-error {
+  color: #aaa5a5;
+  font-size: 12px;
+  font-style: italic;
+  margin: 1em auto;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.4em 0.7em;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  margin: 0.3em auto;
+  display: block;
+}
+
+.btn-blue {
+  background-color: rgb(21, 134, 226);
+}
+
+.btn-blue:hover {
+  background-color: rgb(66, 159, 235);
+}
+
+.btn-green {
+  background-color: rgb(16, 160, 35);
+}
+
+.btn-green:hover {
+  background-color: rgb(53, 179, 70);
+}
+
+.btn-yellow {
+  background-color: rgb(236, 225, 68);
+  color: #424242;
+}
+
+.btn-yellow:hover {
+  background-color: rgb(238, 234, 179);
+}
+
+.btn-disabled {
+  cursor: not-allowed;
+}
+
+.quote-card {
+  background-color: #d4d4d4;
+  padding: 1em;
+  border-radius: 15px;
+  font-size: 17px;
+  width: 90vw;
+  min-height: 130px;
+  position: relative;
+  margin: 1em auto;
+}
+
+.quote-author {
+  font-size: 15px;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+}
+
+.quote-cat {
+  font-style: italic;
+  font-size: 11px;
+  color: #424242;
+  position: absolute;
+  bottom: 0;
+  left: 0.5em;
 }
